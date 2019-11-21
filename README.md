@@ -1,11 +1,11 @@
 # Angular-Component-Inheritance-and-Template-Swapping
 Student Mark List Project Using Angular Component Inheritance and Template Swapping
 
-#Student Marksheet Project Displaying Sample Data
+# Student Marksheet Project Displaying Sample Data
 Displaying student in two different formats list and table.
 Same logics applied inherited from the base component.
 
-#Component Features
+# Component Features
 Component has Input & Output variable.
 Input importing dataset from other component.
 Output EventEmitter emitting the value to the parent component.
