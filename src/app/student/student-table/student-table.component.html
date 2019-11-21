@@ -1,0 +1,18 @@
+<h1>{{heading}}</h1>
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Age</td>
+    <td>Gender</td>
+    <td>Regno</td>
+    <td>Grade</td>
+  </tr>
+  <tr *ngFor="let student of students">
+    <td>{{student.name}}</td>
+    <td>{{student.age}}</td>
+    <td>{{student.gender}}</td>
+    <td>{{student.regno}}</td>
+    <td>{{student.grade}}</td>
+    <td><button (click)="selectStudent(student)">Select</button></td>
+  </tr>
+</table>

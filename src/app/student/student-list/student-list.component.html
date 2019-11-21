@@ -1,0 +1,11 @@
+<h1>{{heading}}</h1>
+<ul>
+  <li *ngFor="let student of students">
+    {{student.name}} {{student.age}} <br>
+    {{student.gender}} <br>
+    {{student.regno}} <br>
+    {{student.grade}} <br>
+    <button (click)="selectStudent(student)">Select</button>
+  </li>
+</ul>
+

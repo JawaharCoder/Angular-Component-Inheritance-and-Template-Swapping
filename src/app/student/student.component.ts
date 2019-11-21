@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Student } from './student.model';
 
 @Component({
   selector: 'app-student',
   templateUrl: './student.component.html',
   styleUrls: ['./student.component.scss']
 })
-export class StudentComponent implements OnInit {
+export class StudentComponent {
 
-  constructor() { }
+  @Input() students: Student[] = [];
+  @Output() select = new EventEmitter();
 
-  ngOnInit() {
+  heading = 'Students';
+
+  constructor(){
+    console.log(this.students);
   }
 
+  selectStudent(student: Student) {
+    this.select.emit(student);
+  }
 }
